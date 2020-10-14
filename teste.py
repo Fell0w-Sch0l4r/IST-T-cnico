@@ -10,6 +10,6 @@ b = int(input('Tempo em minutos:'))
 
 print(f'A velocidade média é:'
       f'\n{a/(b/60):.2f} km/h'
-      f'\n{ (a*100) / (b*60):.2f} m/s')
+      f'\n{ (a*100) / (b*60):.2f} m/s ')
 
 
