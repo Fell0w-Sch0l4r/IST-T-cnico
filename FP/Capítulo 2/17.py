@@ -1,9 +1,13 @@
 positivas = 0
 total = 0
 
-n = int(input('n = '))
-for i in range(n+1):
-    nota = int(input(f'Nota nº {i}: '))
+nota = eval(input('Nota (-1 para parar): '))
+while nota != -1:
+    if nota > 20 or nota < 0:
+        print('Nota inválida')
+    total = total + 1
     if nota >= 10:
-        positivas += 1
-    total += nota
+        positivas = positivas + 1
+    nota = eval(input('Nota (-1 para parar): '))
+percentagem = (100 * positivas) / total
+print('Houve',positivas,'notas positivas que representa',percentagem,'% dos alunos.')
