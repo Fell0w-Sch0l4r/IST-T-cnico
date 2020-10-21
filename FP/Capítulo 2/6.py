@@ -6,5 +6,7 @@ if num1>num2 and num1>num3:
     print(f'O maior número é o {num1}')
 elif num2>num1 and num2>num3:
     print(f'O maior número é o {num2}')
-else:
+elif num3 > num1 and num3 > num3:
     print(f"O maior número é o {num3}")
+else:
+    print('Os números são iguais.')
