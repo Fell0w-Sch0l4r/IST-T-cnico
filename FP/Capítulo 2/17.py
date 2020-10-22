@@ -1,6 +1,5 @@
 positivas = 0
 total = 0
-
 nota = eval(input('Nota (-1 para parar): '))
 while nota != -1:
     if nota > 20 or nota < 0:
