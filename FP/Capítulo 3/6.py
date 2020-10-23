@@ -33,6 +33,6 @@ def dia_mes(x,y):
     elif x == 'dez':
         return 31
     else:
-        return 'ValueErros: Mês não existe'
+        return 'ValueError: Mês não existe'
 
 print(dia_mes('MAR',2016))
