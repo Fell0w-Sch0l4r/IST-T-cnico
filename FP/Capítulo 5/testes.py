@@ -63,4 +63,33 @@ def le_elementos_l():
         if i == len(x):
             return elementos
 
-le_elementos_l()
+def ordena_bor(x):
+    maior = len(x)-1
+    troca = True
+    while troca:
+        troca = False
+        for c in range(maior):
+            if x[c]>x[c+1]:
+                x[c],x[c+1] = x[c+1],x[c]
+                troca = True
+        maior -= 1
+
+
+#ordena_bor([4377,74745,342342,6787,4552,787,122,112,1,2,3,4,5,6,7,9,8,7,5,4,8,78,45,57])
+
+
+def shellsort(x):
+    inter = len(x) // 2
+    troca = True
+    while troca:
+        troca = False
+        for c in range(len(x)-inter):
+            if x[c] > x[c+inter]:
+                x[c],x[c+inter] = x[c+inter],x[c]
+                troca = True
+        inter //= 2
+
+#shellsort([4377,74745,342342,6787,4552,787,122,112,1,2,3,4,5,6,7,9,8,7,5,4,8,78,45,57])
+
+
+

@@ -1,5 +1,5 @@
 def num_para_seq_cod(x):
-    if type(x) != int or x <= 0:
+    if not isinstance(x,int) or x <= 0:
         raise ValueError('Valor é menor que 0 ou não é inteiro')
     num = str(x)
     t = ()
